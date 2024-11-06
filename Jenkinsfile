@@ -81,7 +81,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Clone the Git repository
-                git branch: 'main', url: 'https://github.com/Thunderer2106/mavenmodelrepo.git'
+                git branch: 'master', url: 'https://github.com/Thunderer2106/mavenmodelrepo.git'
                 
             }
         }
