@@ -113,7 +113,8 @@ pipeline {
             steps {
                 script {
                     // Run the Docker container in detached mode and expose port 8080
-                    sh 'docker run -d -p 8080:8081 ${DOCKER_IMAGE}:latest'
+                    // sh 'docker run -d -p 8080:8081 ${DOCKER_IMAGE}:latest'
+                    sh 'docker run -d -p 8082:8081 ${DOCKER_IMAGE}:latest'
                 }
             }
         }
