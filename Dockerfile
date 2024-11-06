@@ -83,4 +83,4 @@ COPY --from=build /app/target/MyJavaApp-1.0-SNAPSHOT.jar /app/my-java-app.jar
 CMD ["java", "-jar", "/app/my-java-app.jar"]
 
 # Expose the application port (optional, adjust if needed)
-EXPOSE 8081
+# EXPOSE 8080
