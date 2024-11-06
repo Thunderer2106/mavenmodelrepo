@@ -74,7 +74,10 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the compiled JAR file from the build stage
-COPY --from=build /app/target/my-java-app-1.0-SNAPSHOT.jar /app/my-java-app.jar
+# COPY --from=build /app/target/my-java-app-1.0-SNAPSHOT.jar /app/my-java-app.jar
+
+COPY --from=build /app/target/MyJavaApp-1.0-SNAPSHOT.jar /app/my-java-app.jar
+
 
 # Command to run the application
 CMD ["java", "-jar", "/app/my-java-app.jar"]
