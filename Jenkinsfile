@@ -10,7 +10,7 @@ pipeline {
         // 1. Checkout Code
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/Thunderer2106/mavenmodelrepo.git'
+                git branch: 'master', url: 'https://github.com/Thunderer2106/mavenmodelrepo.git'
             }
         }
 
